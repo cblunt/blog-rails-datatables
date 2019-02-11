@@ -13,4 +13,6 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery/dist/jquery.min
+//= require datatables/media/js/jquery.dataTables.min
 //= require_tree .

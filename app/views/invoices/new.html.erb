@@ -1,0 +1,25 @@
+<h1>Invoices#new</h1>
+
+<%= form_with model: Invoice.new do |form| %>
+  <table class="datatable">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Title</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @orders.each do |order| %>
+        <tr>
+          <td><%= check_box_tag "invoice[order_ids][]", order.id %></td>
+          <td><%= order.title %></td>
+          <td><%= number_to_currency(order.amount) %></td>
+        </tr>
+      <% end # @orders.each %>
+    </tbody>
+  </table>
+
+  <%= submit_tag "Create Invoice for Selected Orders" %>
+<% end # form_for %>

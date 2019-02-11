@@ -1,5 +1,8 @@
 {
   "name": "datatables-demo",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "datatables": "^1.10.18",
+    "jquery": "^3.3.1"
+  }
 }

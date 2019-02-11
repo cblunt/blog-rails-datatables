@@ -1,0 +1,21 @@
+<h1>Invoices#index</h1>
+
+<%= link_to "New Invoice", new_invoice_path %>
+
+<table class="datatable">
+  <thead>
+    <tr>
+      <th>Invoice ID</th>
+      <th>Orders</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @invoices.each do |invoice| %>
+      <tr>
+        <td><%= invoice.id %></td>
+        <td><%= invoice.orders.count %></td>
+      </tr>
+    <% end # @invoices.each %>
+  </tbody>
+</table>
