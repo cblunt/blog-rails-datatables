@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A tutorial app to demo using [DataTables](https://datatables.net/) with Rails 5.
 
-Things you may want to cover:
+```
+$ git clone https://github.com/cblunt/blog-rails-datatables.git
+$ cd blog-rails-datatables
+$ bin/setup
+$ bin/rails s
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Open http://localhost:3000 in your browser.
+* Click **New Invoice**
+* Check orders to add to invoice.
+* Click **Create Invoice from Selected Orders**
